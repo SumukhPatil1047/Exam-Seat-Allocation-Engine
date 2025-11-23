@@ -1,0 +1,174 @@
+{
+	"info": {
+		"_postman_id": "e4552f33-00d0-4df2-b30e-bad2a1f66043",
+		"name": "Exam Seat Allocation Engine PostMan",
+		"description": "Postman collection for Exam Seat Allocation Engine APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33122088",
+		"_collection_link": "https://sa7777-0683.postman.co/workspace/Assignment~2f47f55b-a29f-45dd-8bc5-c52c2eb36f7d/collection/33122088-e4552f33-00d0-4df2-b30e-bad2a1f66043?action=share&source=collection_link&creator=33122088"
+	},
+	"item": [
+		{
+			"name": "Run Allocation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/allocate",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"allocate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Candidate Allocation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/allocation/{{registrationNumber}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"allocation",
+						"{{registrationNumber}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Daily Allocation Report",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/report/daily?date={{reportDate}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"report",
+						"daily"
+					],
+					"query": [
+						{
+							"key": "date",
+							"value": "{{reportDate}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Candidate Status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/status/{{registrationNumber}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"status",
+						"{{registrationNumber}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/health",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reset All Allocations",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/reset",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"reset"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Remaining Capacity Per Centre",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/capacity/remaining",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"capacity",
+						"remaining"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Candidate Allocation Details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/candidate/details/{{registrationNumber}}",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"candidate",
+						"details",
+						"{{registrationNumber}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8082/api"
+		},
+		{
+			"key": "registrationNumber",
+			"value": "101"
+		},
+		{
+			"key": "reportDate",
+			"value": "2025-09-15"
+		}
+	]
+}
