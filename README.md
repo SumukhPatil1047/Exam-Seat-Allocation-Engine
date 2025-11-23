@@ -128,23 +128,8 @@ sp_CapacityReport
 👨‍💻 Developer
 
 Sumukh Patil
-Java | Spring Boot | Network Engineering
+Java | Spring Boot
 
-
----
-
-# ✨ **STEP 11 — Push README + Postman Collection**
-
-```bash
-git add README.md postman/*
-git commit -m "Added documentation & postman collection"
-git push
-
-🎯 Final Output
-
-Once you complete these steps, you will have:
-
-✔ Fully uploaded Java 8 + Spring Boot project
 ✔ SQL data
 ✔ Postman collection
 ✔ Professional README
