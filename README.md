@@ -129,9 +129,3 @@ sp_CapacityReport
 
 Sumukh Patil
 Java | Spring Boot
-
-✔ SQL data
-✔ Postman collection
-✔ Professional README
-✔ Swagger documentation
-✔ A GitHub repo perfect for your job assignment
